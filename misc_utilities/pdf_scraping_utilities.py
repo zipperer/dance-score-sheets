@@ -93,7 +93,7 @@ def dwim_file_extension(extension_0):
 def all_files_with_extension(input_directory, extension):
     '''@param 0 INPUT_DIRECTORY ; a text string corresponding to the input directory
        @param 1 EXTENSION ; the extension that desired files will have
-       @return list of absolute file paths within INPUT_DIRECTORY that have extension EXTENSION_0'''
+       @return list of absolute file paths within INPUT_DIRECTORY that have extension EXTENSION'''
     input_directory_absolute = os.path.abspath(input_directory)
     result = list()
     for root_directory, directories, files in os.walk(input_directory_absolute):
